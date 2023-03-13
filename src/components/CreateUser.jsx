@@ -46,9 +46,10 @@ function getPostbyID() {
   });
 }
   return (
-    <div>CreateUser
-    <form class="align-items-center">
-    <div class="col">
+    <div className="container">
+     <h6 className="p-2 bd-highlight">CreateUser</h6> 
+    <form className="d-flex justify-content-center">
+    <div class="col-md-6">
       <div class="row">
       <label for="postid" class="form-label">PostId</label>
       <input type="text" value={inputs.id} name="id" class="form-control" id="id" aria-describedby="emailHelp" onChange={handleChange}/>
@@ -63,7 +64,7 @@ function getPostbyID() {
       <label for="author" class="form-label">Author</label>
       <input type="text" value={inputs.author} name="author" class="form-control" id="author" aria-describedby="emailHelp" onChange={handleChange}/>
       <div id="author" class="form-text">We'll never share your email with anyone else.</div>
-      <button type="button" class="btn btn-primary" onClick={handleSubmit}>submit</button>
+      <button type="button" className="btn btn-primary" onClick={handleSubmit}>submit</button>
       </div>
     </div>
     </form>
